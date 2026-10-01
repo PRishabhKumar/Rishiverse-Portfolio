@@ -17,7 +17,9 @@ page.on("pageerror", (error) => errors.push(error.message));
 page.on("console", (message) => {
   if (message.type() === "error") errors.push(message.text());
 });
-await page.goto("http://127.0.0.1:5173/?intro=skip", { waitUntil: "networkidle" });
+await page.goto("http://127.0.0.1:5173/?intro=skip", {
+  waitUntil: "networkidle",
+});
 await page.evaluate(() => document.fonts.ready);
 await page.screenshot({ path: "qa/desktop-hero.png" });
 await page.screenshot({ path: "qa/desktop-full.png", fullPage: true });
@@ -74,11 +76,13 @@ assert.equal(
 const downloadPromise = page.waitForEvent("download");
 await page.getByRole("link", { name: "Download résumé", exact: true }).click();
 const download = await downloadPromise;
-assert.equal(download.suggestedFilename(), "Rishabh's resume.pdf");
+assert.equal(download.suggestedFilename(), "Rishabh-Kumar-Resume.pdf");
 const measurements = [];
 for (const width of [320, 375, 390, 430, 768, 850, 1024, 1280, 1440, 1920]) {
   await page.setViewportSize({ width, height: 900 });
-  await page.goto("http://127.0.0.1:5173/?intro=skip", { waitUntil: "networkidle" });
+  await page.goto("http://127.0.0.1:5173/?intro=skip", {
+    waitUntil: "networkidle",
+  });
   const result = await page.evaluate(() => ({
     width: innerWidth,
     scrollWidth: document.documentElement.scrollWidth,
@@ -104,7 +108,7 @@ for (const width of [320, 375, 390, 430, 768, 850, 1024, 1280, 1440, 1920]) {
     );
     await page
       .locator("#mobile-navigation")
-      .getByRole("link", { name: "02 About" })
+      .getByRole("link", { name: "03 About" })
       .click();
     assert.equal(await page.locator("#mobile-navigation").count(), 0);
     assert.equal(await page.evaluate(() => document.body.style.overflow), "");

@@ -1,0 +1,135 @@
+{
+  "errors": [],
+  "checks": [
+    "A dedicated Publications section sits between work and about, with navigation and heading links.",
+    "Patent scope, the Swadhyay research card, the deferred engineering write-up, and the derived verse splits are all present.",
+    "Scrolling the stage drives the split, meanings, grammar, and access reveals, with the rail and token spacing following the same progress.",
+    "While pinned, the panel stays fully inside the viewport and clear of the sticky header.",
+    "Reduced motion shows the whole decomposition immediately, without pinning or scrub animation.",
+    "All 13 protected project images and portfolio assets are byte-for-byte unchanged."
+  ],
+  "layouts": [
+    {
+      "width": 320,
+      "height": 568,
+      "fit": "flow",
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "height": 667,
+      "fit": "flow",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "fit": "flow",
+      "overflow": false
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "fit": "flow",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "fit": "flow",
+      "overflow": false
+    },
+    {
+      "width": 850,
+      "height": 768,
+      "fit": "flow",
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "fit": "flow",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "fit": "flow",
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "fit": "flow",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "fit": "sticky",
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "fit": "sticky",
+      "overflow": false
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "fit": "flow",
+      "overflow": false
+    }
+  ],
+  "audits": [
+    {
+      "name": "Publications, light desktop",
+      "violations": []
+    },
+    {
+      "name": "Publications, dark desktop",
+      "violations": []
+    },
+    {
+      "name": "Publications, dark mobile",
+      "violations": []
+    },
+    {
+      "name": "Publications, reduced motion",
+      "violations": []
+    }
+  ],
+  "scrub": [
+    {
+      "progress": 0.0003,
+      "stage": 1,
+      "tokenGap": 6.0045,
+      "firstWord": 0,
+      "lastWord": 0,
+      "compound": 0,
+      "access": 0.32,
+      "railFill": "matrix(0, 0, 0, 0, 0, 0)"
+    },
+    {
+      "progress": 0.5491,
+      "stage": 3,
+      "tokenGap": 14.2365,
+      "firstWord": 1,
+      "lastWord": 0,
+      "compound": 0.37422,
+      "access": 0.32,
+      "railFill": "matrix(0, 0, 0, 0, 0, 0)"
+    },
+    {
+      "progress": 0.999,
+      "stage": 5,
+      "tokenGap": 20.985,
+      "firstWord": 1,
+      "lastWord": 1,
+      "compound": 1,
+      "access": 1,
+      "railFill": "matrix(1, 0, 0, 1, 0, 0)"
+    }
+  ]
+}

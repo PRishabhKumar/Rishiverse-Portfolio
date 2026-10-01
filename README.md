@@ -62,7 +62,7 @@ The default output is `../Rishabh-Portfolio.html`. You can pass a different outp
 | `src/immersive.css` | Responsive 3D stages, inspector, controls, and focus states |
 | `src/ThemeToggle.jsx` | Theme state, system preferences, persistence, and animated eclipse toggle |
 | `src/MotionDesign.jsx` | Masked heading lines, magnetic controls, scroll parallax, and sliding filter plate |
-| `public/Rishabh's resume.pdf` | Replace this to update the downloadable resume |
+| `public/Rishabh-Kumar-Resume.pdf` | Replace this to update the downloadable resume |
 | `public/images/` | Hero and project imagery |
 | `index.html` | Page title, SEO description, theme color, and social metadata |
 
@@ -196,6 +196,45 @@ Rishabh's Portfolio> npm run dev
 ```
 
 The familiar Vite output and simulated Control-click open the same portfolio in place. No local command is executed and no visitor is sent to their own localhost. Skip intro, Escape, reduced-motion direct entry, and `?intro=skip` are retained.
+
+## Publications & research
+
+A dedicated **Publications** section sits between Selected Work and About, reachable from the main navigation.
+
+### What it presents
+
+- The **patent**: “DEVICE AND METHOD FOR TACTILE AND VOICE NAVIGATION AND RECITATION ASSESSMENT OF HIERARCHICALLY STRUCTURED TEXT”, described by its scope — navigating nested text by touch and voice, and assessing recitation — plus who it is for, with a pointer that identifiers and dates will be added once public.
+- The **research behind it**: Swadhyay, the RAG and computational-philology platform for classical Sanskrit literature. Its engineering details are deliberately deferred: the card states that the full stack will join the work section once the platform ships.
+- A closing line linking the interaction research and the software as two approaches to one idea.
+
+### The scroll-driven verse anatomy
+
+The centrepiece is a sticky stage driven entirely by scroll position — no timeline, no autoplay:
+
+1. **The source** — Shrimad Bhagavad Gita 1.1 in Devanagari with its IAST transliteration and a plain-English reading.
+2. **The split** — the verse separates into 11 grammatical units on the real spherical/typographic level, with the compounds it was reassembled from (`पाण्डवाश्चैव → पाण्डवाः + च + एव`, `किमकुर्वत → किम् + अकुर्वत`).
+3. **The meaning** — each unit fades in with its word-by-word meaning as the structure opens.
+4. **The grammar** — case and mood annotations arrive with each unit: locative *Saptamī* for `धर्मक्षेत्रे`, the desiderative `युयुत्सवः`, and the vocative address to `सञ्जय`.
+5. **The access** — the three interaction modes from the patent (tactile, voice, recitation assessment) with a tactile dot field and a live waveform.
+
+A five-step rail, a progress line and the token spacing all read from the same progress variable, so the diagram, the reveal order and the stage numbers always agree.
+
+### Behaviour, layout and accessibility
+
+- Progress is measured against the sticky panel's own travel, so the decomposition completes exactly when the panel finishes pinning regardless of section length.
+- Where the panel cannot fit a short viewport, it lays out as flowing content instead of trapping part of itself inside a viewport-height sticky box, and the word list is never clipped.
+- Reduced motion shows every stage immediately with no pinning, no scrub animation and a static panel.
+- The word list uses one column on narrow screens and two on wide ones; the panel clears the sticky header while pinned.
+- Verses are public-domain classical text; all wording is our own description of the invention and the platform.
+
+### Files
+
+- `src/Publications.jsx` — section structure, verse anatomy, scrub hook and cards.
+- `src/publications.js` — publication/patent copy, project summary, the verse, its tokens, compounds and stages.
+- `src/publications.css` — scoped styling, scroll mapping, sticky/flow behaviour, dark theme and responsive rules.
+- `scripts/check-publications.mjs` — placement, content, scroll mapping, pinning, reduced motion, 12 viewport layouts, four accessibility audits and preserved-image hashes.
+
+The section keeps the site's paper/ink palette, Manrope and Instrument Serif typography, DM Mono labels, and lime-sage accent. Contrast was verified in light, dark, mobile and reduced-motion contexts.
 
 ## From orbit to campus — education-card journey
 

@@ -4,7 +4,7 @@ export const profile = {
   github: "https://github.com/PRishabhKumar",
   linkedin: "https://www.linkedin.com/in/p-rishabh-kumar-9336b0289/",
   leetcode: "https://leetcode.com/u/P_RISHABH_KUMARl/",
-  resume: "/Rishabh's resume.pdf",
+  resume: "/Rishabh-Kumar-Resume.pdf",
 };
 
 export const projects = [

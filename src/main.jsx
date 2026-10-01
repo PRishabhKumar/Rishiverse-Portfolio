@@ -9,6 +9,7 @@ import "./enhancements.css";
 import "./immersive.css";
 import "./desktop-intro.css";
 import "./location-journey.css";
+import "./publications.css";
 
 const artwork = new URLSearchParams(window.location.search).get("artwork");
 createRoot(document.getElementById("root")).render(

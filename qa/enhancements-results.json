@@ -1,6 +1,6 @@
 {
   "errors": [],
-  "cursor": "One ball cursor with element-fitted frames and dotted circular outlines. Native cursor suppressed across every DOM element and dialog backdrop. Tracks accurately, morphs on hover, and hides for keyboard/touch.",
+  "cursor": "One ball cursor with 6px-offset frames and dotted circular outlines. Native cursor suppressed across every DOM element and dialog backdrop. Tracks accurately, morphs on hover, and hides for keyboard/touch.",
   "theme": "Toggle, saved preference, system default, both modal and mobile-menu themes, and touch operation passed.",
   "motion": "Masked headings, cursor hover feedback, pointer accuracy, and animated dialog exit passed.",
   "viewports": [

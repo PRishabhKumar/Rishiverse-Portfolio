@@ -47,9 +47,11 @@ import ThemeToggle, { useTheme } from "./ThemeToggle";
 import MotionDesign, { HeadingLine, FilterRail } from "./MotionDesign";
 import LocationJourney from "./LocationJourney";
 import { warmLocationAssets } from "./location-data";
+import Publications from "./Publications";
 
 const navItems = [
   ["work", "Work"],
+  ["publications", "Publications"],
   ["about", "About"],
   ["toolkit", "Toolkit"],
   ["contact", "Contact"],
@@ -254,7 +256,7 @@ function Header({ active, scrolled, theme, onToggleTheme }) {
             <a
               className="mobile-resume"
               href={profile.resume}
-              download="Rishabh's resume.pdf"
+              download="Rishabh-Kumar-Resume.pdf"
               onClick={() => setMenuOpen(false)}
             >
               Download resume <Download size={18} />
@@ -303,7 +305,7 @@ function Hero() {
             <a
               className="resume-link"
               href={profile.resume}
-              download="Rishabh's resume.pdf"
+              download="Rishabh-Kumar-Resume.pdf"
             >
               Download résumé <Download size={17} />
             </a>
@@ -597,7 +599,7 @@ function About() {
     >
       <div className="container">
         <Reveal>
-          <SectionLabel number="02">A LITTLE ABOUT ME</SectionLabel>
+          <SectionLabel number="03">A LITTLE ABOUT ME</SectionLabel>
         </Reveal>
         <div className="about-grid">
           <div className="about-copy">
@@ -809,7 +811,7 @@ function Toolkit() {
     >
       <div className="container">
         <Reveal className="toolkit-topline">
-          <SectionLabel number="03" light>
+          <SectionLabel number="04" light>
             THE TOOLKIT
           </SectionLabel>
           <span className="eyebrow">
@@ -1260,6 +1262,7 @@ export default function App() {
       <main id="main-content">
         <Hero />
         <Work onOpen={openProject} />
+        <Publications />
         <About />
         <Toolkit />
         <Contact onCopy={copyEmail} />
