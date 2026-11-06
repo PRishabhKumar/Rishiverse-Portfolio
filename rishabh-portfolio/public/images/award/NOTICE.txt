@@ -1,0 +1,10 @@
+Award artifacts for the ICDMIS 2026 Best Paper Award showcase.
+
+- certificate.webp — rendered from the user-supplied "Certificate.pdf" (photo of the
+  issued best paper certificate, ICDMIS 2026) at 2.5x with pypdfium2, cropped and
+  converted to WebP.
+- memento.webp — rendered from the user-supplied "Best Paper Award.pdf" (photo of the
+  award memento plaque) the same way.
+
+Both sources were provided by the portfolio owner; all rights remain with the
+issuing bodies (Eminent College of Management and Technology / SLIIT).
